@@ -1,4 +1,4 @@
-#Práctica: Programa de promedios
+#Práctica I: Programa de promedios
 
 #Ingresar el nombre y apellido de un alumno y sus notas de matemática, literatura y física.
 #Se pide imprimir el nombre, el apellido y el promedio.
