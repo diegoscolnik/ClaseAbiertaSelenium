@@ -21,23 +21,19 @@ def promedio_de_notas(suma_notas):
     return(sum(suma_notas)/float(len(suma_notas)))
 
 var_promedio = promedio_de_notas(suma_notas)
-descripción_alumno = ("El alumno se llama " + nombre + " " + apellido + " y su promedio es de " + str(var_promedio))
-
-#Print Nombre, apellido y promedio
-
-print(descripción_alumno)
+descripcion_alumno = ("El alumno se llama " + nombre + " " + apellido + " y su promedio es de " + str(var_promedio))
 
 #Print resultado de promedio
 #Resultados desaprobados
 
 def resultado_alumno(var_promedio):
     if(var_promedio < 4):
-        print("Alumno con promedio insuficiente")
+        print(descripcion_alumno + ". Alumno con promedio insuficiente.")
     elif(4 <= var_promedio <= 5.99999):
-        print("El alumnmo debe ir a recuperatorio")
+        print(descripcion_alumno + ". El alumnmo debe ir a recuperatorio.")
     elif(var_promedio > 6):
-        print("El alumno fue aprobado")
+        print(descripcion_alumno + ". El alumno fue aprobado.")
         if(var_promedio >= 9):
-            print("Alumno destacado")
+            print("Alumno destacado.")
 
 resultado_alumno(var_promedio)
