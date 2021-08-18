@@ -11,9 +11,9 @@ driver.find_element_by_name('submit_search').click()
 time.sleep(5)
 tc.assertEqual('No results were found for your search "Hola Mundo"', driver.find_element_by_xpath('//*[@id="center_column"]/p').text)
 driver.find_element_by_link_text('Women').click()
-time.sleep(5)
+time.sleep(2)
 driver.find_element_by_partial_link_text('Dres').click()
-time.sleep(5)
+time.sleep(2)
 #Link Text
 driver.find_element_by_link_text('Casual Dresses').click()
 #Partial Link Text
